@@ -1,0 +1,84 @@
+div#filter_checkboxs {
+	position: fixed;
+	right: 100px;
+	top: 20px;
+}
+div#filter_checkboxs form{
+	border-bottom-style:solid; 
+	border-bottom-color: lightgray; 
+	border-bottom-width: 1px;
+	padding: 10px 0;
+	font-size: 12px;
+}
+svg{
+	margin-left: 40px;	
+}
+
+.sapSparkline{
+  fill: transparent;
+}
+
+div.colorbox{
+	position: absolute;
+	margin-top: 2px;
+    display: inline;
+    width: 14px;
+    height: 14px;
+    background-color: #b0c4de;
+    left: -20px;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+div.tooltip {
+  position: absolute;	
+  text-align: center;	
+  width: 130px;	
+  height: 70px;		
+  padding: 1px;	
+  background: #248C49;	
+  border: 1px;	
+  border-color: lightgray;					
+  border-radius: 2px;
+  line-height:100%;
+  font: 12px sans-serif;
+  color: white;
+ /*  pointer-events: none;	This line needs to be removed */
+}
+
+div.tooltip p strong{
+	font: 14px sans-serif;
+  	color: white;
+	line-height:120%;
+}
+
+div.smtooltip {
+  position: absolute;	
+  text-align: center;	
+  width: 120px;	
+  height: 52px;		
+  padding: 2px;	
+  background: steelblue;	
+  border: 1px;	
+  border-color: lightgray;					
+  border-radius: 2px;
+  line-height:100%;
+  font: 12px sans-serif;
+  color: white;
+ /*  pointer-events: none;	This line needs to be removed */
+}
+div.smtooltip p{
+	margin 6px 0;
+}
+div.smtooltip p strong{
+	font: 14px sans-serif;
+  	color: white;
+	line-height:120%;
+}

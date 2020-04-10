@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.sap.sample.scorecardv2"
+	title="SAP PM Extension Scorecardv2"
+	version="1.0"
+	vendor="SAP">
+	<component
+		id="Scorecardv2"
+		title="Scorecardv2"
+		icon="res/sparkline.png"
+		handlerType="div"
+		databound="true">
+		<stdInclude kind="d3"/>
+		<jsInclude>res/js/scorecard.js</jsInclude>
+		<cssInclude>res/css/scorecard.css</cssInclude>
+		<property
+			id="stackedColumnSet"
+			title="Stacked Column Set"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeMetadata" value="true"/>
+			<option name="includeTuples" value="false"/>
+		</property>
+		<property
+			id="lineSet"
+			title="Line Set"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeMetadata" value="true"/>
+			<option name="includeTuples" value="false"/>
+		</property>
+		<property
+			id="centerColumn"
+			title="Center Column"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeMetadata" value="true"/>
+			<option name="includeTuples" value="false"/>
+			<option name="includeResults" value="false"/>
+		</property>
+		<property
+			id="css"
+			title="CSS Style"
+			type="String"
+			bindable="true"/>
+		<property
+			id="onClick"
+			title="on Click"
+			type="ScriptText"
+			group="Events"/>
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">20</defaultValue>
+			<defaultValue property="TOP_MARGIN">20</defaultValue>
+			<defaultValue property="RIGHT_MARGIN">20</defaultValue>
+			<defaultValue property="BOTTOM_MARGIN">20</defaultValue>
+			<defaultValue property="WIDTH">auto</defaultValue>
+			<defaultValue property="HEIGHT">auto</defaultValue>
+			<defaultValue property="css">stroke : steelblue; stroke-width : 2; fill : none;</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

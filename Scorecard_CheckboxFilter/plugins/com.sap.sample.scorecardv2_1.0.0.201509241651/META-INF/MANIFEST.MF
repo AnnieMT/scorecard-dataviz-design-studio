@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sap.sample.scorecardv2;singleton:=true
+Bundle-Name: SAP PM Extension Scorecardv2
+Bundle-Version: 1.0.0.201509241651
+Require-Bundle: com.sap.ip.bi.zen.rt.components.sdk.eclipse
+Bundle-ManifestVersion: 2
+Bundle-Vendor: SAP
+
+
